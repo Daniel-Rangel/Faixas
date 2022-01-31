@@ -1,0 +1,1 @@
+Variasções de faixas em cards
