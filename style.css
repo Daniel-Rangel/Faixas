@@ -13,16 +13,30 @@ body{
     min-height: 100vh;
 }
 
-.card-0{
+.l-container{
+    width: 100%;
+    max-width: 1024px;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.c-card{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 30vh;
+    height: 20vw;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
 
-.card-0 span{
+
+/* fita 0 */
+
+.card__0 span{
     position: absolute;
     width: 150px;
     height: 150px;
@@ -35,11 +49,11 @@ body{
     overflow: hidden;
 }
 
-.card-0 span::before{
+.card__0 span::before{
     content: 'Bem Vindo';
     width: 150%;
     height: 40px;
-    background: #62baea;
+    background: #e22020;
     position: absolute;
     transform: rotate(-45deg) translateY(-20px);
     display: flex;
@@ -50,17 +64,61 @@ body{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card-0 span::after{
+.card__0 span::after{
     content: '';
     position: absolute;
-    background-color: #4a98bf;
+    background-color: #ac0e0e;
     width: 10px;
     height: 10px;
     bottom: 0;
     left: 0;
     z-index: -1;
-    box-shadow: 140px -140px #4a98bf;
+    box-shadow: 140px -140px #ac0e0e;
+}
+
+/* fita 1 */
+
+.card__1 span{
+    position: absolute;
+    top: 25px;
+    left: -12px;
+    background-color: red;
+    width: 80%;
+    height: 2.5vw;
+    border-radius: 25px 25px 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    transition: all ease-in-out;
+}
+
+.card__1 span::before{
+    content: '';
+    position: absolute;
+    background-color: #a30707;
+    top: 34px;
+    left: 0px;
+    width: 12px;
+    height: 15px;
+    border-radius: 50% 0 0 50%;
+    z-index: 2;
+}
+
+.card__1 span::after{
+    content: '';
+    position: absolute;
+    background-color: #e22020;
+    width: 12px;
+    height: 18px;
+    top: 30px;
+    left: 0;
+    border-bottom-left-radius: 50%;
 }
